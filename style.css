@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container,
+.about-section {
+  height: 100vh;
+  background: url(image/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(2, 1, 5);
+  z-index: 100;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: antiquewhite;
+}
+
+.navbar .logo span {
+  color: hsl(23, 70%, 45%);
+}
+
+.navbar .menu-links {
+  display: flex;
+  gap: 40px;
+}
+
+.navbar a {
+  color: antiquewhite;
+  text-decoration: none;
+  transition: 0.1s ease;
+}
+
+.navbar a:hover {
+  color: hsl(23, 70%, 45%);
+  border-bottom: 1px solid hsl(23, 70%, 45%);
+}
+
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.hero-section .content {
+  color: #fff;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-section .content h1 {
+  font-size: 3rem;
+  max-width: 600px;
+}
+
+.hero-section .content p {
+  font-size: 1.2rem;
+  line-height: 35px;
+  font-weight: 300;
+  margin-top: 15px;
+  max-width: 600px;
+  color: #fff;
+}
+
+.hero-section .content button {
+  background: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 35px;
+  padding: 12px 30px;
+  cursor: pointer;
+}
+
+.hero-section .content button:hover {
+  background: #c06b3e;
+  color: #fff;
+}
+
+#menu-btn {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+#close-btn {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.second-section {
+  height: 80vh;
+  background: url(image/machine-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.second-section .second-content {
+  color: #fff;
+  max-width: 1200px;
+  width: 600px;
+  margin: 0 15% 0 auto;
+  backdrop-filter: blur(5px);
+  background-color: hsla(0, 0%, 0%, 0.7);
+  height: 100%;
+  padding: 7% 2%;
+  text-align: center;
+}
+
+.second-content h2 {
+  font-size: 2rem;
+  padding-bottom: 50px;
+}
+
+.second-content p {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+.second-content button {
+  background: hsla(0, 0%, 100%, 0);
+  outline: none;
+  border: rgb(255, 255, 255) solid 4px;
+  border-radius: 2px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 35px;
+  padding: 12px 30px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.second-content button:hover {
+  background: #c06b3e;
+  color: #fff;
+}
+
+.about-content {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.about-content p {
+  max-width: 60%;
+  font-size: 1.2rem;
+  line-height: 35px;
+}
+
+.course-body {
+  background-color: #faf5ee;
+}
+
+.course-section .course-bg {
+  background: url(image/machine-bg.jpg);
+  height: 45vh;
+  background-position: 0 50%;
+  background-size: cover;
+  position: relative;
+}
+
+.course-section .course-content {
+  text-align: center;
+  max-width: 1500px;
+  width: 100%;
+  margin: 3% auto;
+}
+
+.course-content h1 {
+  font-size: 2.5rem;
+  padding-bottom: 30px;
+}
+
+.course-content p {
+  font-size: 24px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: grey;
+  line-height: 1.6;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid hsla(0, 1%, 50%, 0.6);
+  width: 50%;
+  margin: 30px auto;
+}
+
+.two-day-course {
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.two-day-course h2 {
+  font-size: 4rem;
+  margin-top: 6%;
+  margin-bottom: 5%;
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.two-day-course h3 {
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+.two-day-course p {
+  font-size: 1.2rem;
+  line-height: 2;
+  text-align: left;
+  padding-bottom: 5%;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: #fff;
+}
+
+footer h2 {
+  font-size: 1.5rem;
+  margin: 0 0 15px 0;
+  padding-top: 3%;
+}
+
+footer p {
+  font-size: 1.1rem;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+footer #email-input {
+  font-size: 15px;
+  padding: 1em;
+  margin: 20px 5px 3% 0;
+  width: 15%;
+}
+
+footer #signup-btn {
+  font-size: 15px;
+  padding: 1em 2.5em;
+  background-color: black;
+  color: #fff;
+  border: 3px solid #fff;
+}
+
+footer #signup-btn:hover {
+  color: black;
+  background-color: #fff;
+  transition: 0.15s ease;
+}
+
+.icons i {
+  font-size: 1.5rem;
+  padding: 0 20px;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+
+.icons i:hover {
+  color: grey;
+  transition: 0.1s ease-in-out;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    padding: 20px 30px;
+  }
+
+  header.show-menu::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+  }
+
+  #menu-btn,
+  #close-btn {
+    display: block;
+  }
+
+  .navbar .menu-links {
+    position: fixed;
+    left: -260px;
+    top: 0;
+    width: 260px;
+    height: 100vh;
+    background: #fff;
+    padding: 70px 40px 0;
+    flex-direction: column;
+    transition: left 0.15s ease;
+  }
+
+  header.show-menu .navbar .menu-links {
+    left: 0;
+  }
+
+  .navbar a {
+    color: #000;
+  }
+
+  .hero-section .content,
+  .about-section .about-content {
+    text-align: center;
+    padding: 0 10%;
+  }
+
+  .hero-section .content :is(h1, p),
+  .about-section .about-content :is(h1, p) {
+    max-width: 100%;
+  }
+
+  .hero-section .content h1 {
+    font-size: 2.3rem;
+    line-height: 70px;
+  }
+
+  .hero-section .content button {
+    padding: 9px 18px;
+  }
+
+  .second-content :is(h2, p) {
+    width: 100%;
+  }
+}
