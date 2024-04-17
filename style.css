@@ -286,6 +286,7 @@ hr {
 }
 
 /* contact  */
+
 .contact-section {
   max-width: 1200px;
   width: 40%;
@@ -311,6 +312,43 @@ hr {
 
 .contact-section a:hover {
   color: #b39b7b;
+}
+
+/* Products */
+
+.heading h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 3rem;
+  color: #d6ae75;
+  max-width: 1600px;
+  text-align: center;
+  margin: 8% auto 2% auto;
+}
+
+.products-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.products-container .box {
+  box-shadow: 5px 10px 10px #888888;
+  margin: 4% 0;
+  border-radius: 8px;
+  min-width: 500px;
+  padding: 10px;
+}
+.box img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  object-position: center;
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 0.5rem;
 }
 
 /* Footer */
