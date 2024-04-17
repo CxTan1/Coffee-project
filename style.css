@@ -15,6 +15,8 @@
   background-size: cover;
 }
 
+/* Navbar/ Header */
+
 header {
   position: fixed;
   top: 0;
@@ -58,6 +60,13 @@ header .navbar {
   color: hsl(23, 70%, 45%);
   border-bottom: 1px solid hsl(23, 70%, 45%);
 }
+
+.navbar .logo:hover {
+  color: hsl(23, 70%, 45%);
+  border-bottom: none;
+}
+
+/* Main Section */
 
 .hero-section {
   height: 100vh;
@@ -118,6 +127,8 @@ header .navbar {
   cursor: pointer;
 }
 
+/* second section in main page */
+
 .second-section {
   height: 80vh;
   background: url(image/machine-bg.jpg);
@@ -165,6 +176,8 @@ header .navbar {
   color: #fff;
 }
 
+/* About section */
+
 .about-content {
   color: #fff;
   display: flex;
@@ -186,6 +199,21 @@ header .navbar {
   line-height: 35px;
 }
 
+.about-content a {
+  color: #d6ae75;
+  padding-bottom: 0.05em;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(211, 179, 134, 0.3);
+  text-decoration: none;
+}
+
+.about-content a:hover {
+  color: #a08259;
+}
+
+/* Course section */
+
 .course-body {
   background-color: #faf5ee;
 }
@@ -206,8 +234,10 @@ header .navbar {
 }
 
 .course-content h1 {
-  font-size: 2.5rem;
-  padding-bottom: 30px;
+  font-size: 4rem;
+  padding-bottom: 70px;
+  font-weight: 400;
+  font-family: adobe-garamond-pro;
 }
 
 .course-content p {
@@ -217,22 +247,27 @@ header .navbar {
   line-height: 1.6;
 }
 
+/* Seperator line */
 hr {
   border: none;
   border-top: 2px solid hsla(0, 1%, 50%, 0.6);
-  width: 50%;
-  margin: 30px auto;
+  width: 60%;
+  margin: auto;
+  padding: 1%;
 }
+
+/* courses */
 
 .two-day-course {
   max-width: 1500px;
   margin: 0 auto;
   text-align: center;
+  padding: 0 30px;
 }
 
 .two-day-course h2 {
   font-size: 4rem;
-  margin-top: 6%;
+  margin-top: 5%;
   margin-bottom: 5%;
   font-weight: 500;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -247,8 +282,38 @@ hr {
   font-size: 1.2rem;
   line-height: 2;
   text-align: left;
-  padding-bottom: 5%;
+  padding-bottom: 7%;
 }
+
+/* contact  */
+.contact-section {
+  max-width: 1200px;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.contact-section p {
+  text-align: left;
+  padding: 2%;
+  line-height: 2;
+}
+
+.contact-section a {
+  color: #d6ae75;
+  padding-bottom: 0.05em;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(211, 179, 134, 0.3);
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  color: #b39b7b;
+}
+
+/* Footer */
 
 footer {
   background-color: black;
@@ -342,7 +407,9 @@ footer #signup-btn:hover {
   }
 
   .hero-section .content,
-  .about-section .about-content {
+  .about-section .about-content,
+  .course-section .course-content,
+  .two-day-course {
     text-align: center;
     padding: 0 10%;
   }
@@ -363,5 +430,15 @@ footer #signup-btn:hover {
 
   .second-content :is(h2, p) {
     width: 100%;
+  }
+
+  .contact-section {
+    padding: 5% 0;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .contact-section :is(h2) {
+    padding-bottom: 30px;
   }
 }
