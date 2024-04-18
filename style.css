@@ -182,10 +182,10 @@ header .navbar {
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 90vh;
-  max-width: 1200px;
+  height: 100vh;
+  max-width: 1600px;
   margin: 0 auto;
+  padding: 10% 5%;
 }
 
 .about-content h1 {
@@ -194,9 +194,9 @@ header .navbar {
 }
 
 .about-content p {
-  max-width: 60%;
+  max-width: 70%;
   font-size: 1.2rem;
-  line-height: 35px;
+  line-height: 30px;
 }
 
 .about-content a {
@@ -323,11 +323,12 @@ hr {
   color: #d6ae75;
   max-width: 1600px;
   text-align: center;
-  margin: 8% auto 2% auto;
+  margin: 0 auto;
+  padding-top: 150px;
 }
 
 .products-container {
-  max-width: 1600px;
+  max-width: 1500px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -338,7 +339,8 @@ hr {
   box-shadow: 5px 10px 10px #888888;
   margin: 4% 0;
   border-radius: 8px;
-  min-width: 500px;
+  min-width: 30%;
+  max-width: 30%;
   padding: 10px;
 }
 .box img {
@@ -349,6 +351,90 @@ hr {
   background: #f1f1f1;
   padding: 20px;
   border-radius: 0.5rem;
+}
+
+.products-container .box .products-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 10px;
+}
+
+.box h3 {
+  margin: 10px 10px;
+}
+
+.products-container .box .products-content span {
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #a08259;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.products-container .box .products-content a {
+  padding: 0.5rem 1rem;
+  color: black;
+  border: 2px solid #a08259;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.products-container .box .products-content a:hover {
+  background: #a08259;
+  color: white;
+  transition: 0.2s all ease;
+}
+
+/*customer's reviews */
+
+.reviews-section h2 {
+  max-width: 1500px;
+  margin: 3% auto;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 8%;
+}
+
+.reviews-content {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 8%;
+}
+
+.review-box {
+  width: 30%;
+  border: #000 2px solid;
+  box-shadow: 5px 10px 18px #888888;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.review-box p {
+  font-size: 1rem;
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.review-box img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.review-box:hover {
+  background: #f3d9b636;
+  transition: 0.2s all linear;
 }
 
 /* Footer */
@@ -404,7 +490,7 @@ footer #signup-btn:hover {
   transition: 0.1s ease-in-out;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   header {
     padding: 20px 30px;
   }
@@ -452,9 +538,19 @@ footer #signup-btn:hover {
     padding: 0 10%;
   }
 
+  .about-section {
+    padding: 15% 0;
+  }
+
   .hero-section .content :is(h1, p),
   .about-section .about-content :is(h1, p) {
     max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .about-section :is(p) {
+    font-size: 0.8rem;
+    padding: 0 2%;
   }
 
   .hero-section .content h1 {
@@ -478,5 +574,10 @@ footer #signup-btn:hover {
 
   .contact-section :is(h2) {
     padding-bottom: 30px;
+  }
+
+  .products-container .box {
+    max-width: 40%;
+    min-width: 40%;
   }
 }
